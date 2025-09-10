@@ -1,0 +1,22 @@
+data_root: "VOCdevkit"
+img_dir: "JPEGImages"
+ann_dir: "Annotations"
+output_dir: "output"
+output_csv: "labels_clean.csv"
+class_normalization:
+  "no_defect": "normal"
+  "good": "normal"
+  "ok": "normal"
+  "Normal": "normal"
+  "Crack": "crack"
+  "cracks": "crack"
+  "Porosity": "porosity"
+  "Pore": "porosity"
+  "Undercut": "undercut"
+  "Slag": "slag_inclusion"
+  "Inclusion": "slag_inclusion"
+default_label: "normal"
+test_size: 0.2
+val_size: 0.1
+random_state: 42
+min_samples_per_class: 2
